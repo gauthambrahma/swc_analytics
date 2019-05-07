@@ -13,20 +13,42 @@
     <div class="row">
       <div class="col s12">
         <ul class="tabs">
-          <li class="tab col s3"><a class="active" href="#Attendance">Attendance</a></li>
+          <li class="tab col s3"><a class="active" href="#Clean">Clean</a></li>
+          <li class="tab col s3"><a href="#Attendance">Attendace</a></li>
           <li class="tab col s3"><a href="#Analytics">Analytics</a></li>
         </ul>
       </div>
-      <div id="Attendance" class="col s12">
+      <div id="Clean" class="col s12">
         <div class="row">
-          <div class="col s12">
+          <div class="col s3">
             <br />
-            <a class="waves-effect waves-light btn" id="open-attendance-csv-btn">Import Attendance CSV</a>
+            <a class="waves-effect waves-light btn" id="import-report-csv-btn">Import Report CSV</a>
           </div>
+          <div class="col s3">
+              <br />
+              <a class="waves-effect waves-light btn disabled" id="save-attendance-csv-btn">Save Attendance</a>
+            </div>
+          <div class="col s12">
+              <br />
+              <div id="tableContainer1"></div>
+            </div>  
         </div>
       </div>
+      <div id="Attendance" class="col s12"> 
+        <div class="row">
+          <div class="col s3">
+            <br />
+            <a class="waves-effect waves-light btn disabled" id="open-attendance-csv-btn">Open Attendance(s)</a>
+          </div>
+          <div class="col s3">
+              <br />
+              <a class="waves-effect waves-light btn disabled" id="save-marked-attendance-csv-btn">Save Attendance</a>
+            </div>
+          </div>
+        </div>
+       
       <div id="Analytics" class="col s12">Analytics</div>
-    </div>
+
           
     <script>
       // You can also require other files to run in this process
